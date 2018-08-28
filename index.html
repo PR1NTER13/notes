@@ -3,36 +3,114 @@
 <head>
 	<meta charset="UTF-8">
 	<title>PR1NTER13 Notes</title>
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-	<main>
-		<div class="section" id="html">
-			<h1>HTML</h1>
-			<a href="#"></a>	
+	<main class="content">
+		<h1 class="header">PR1NTER13 General Manual</h1>
+		<h1>Computer/Math TOC</h1>
+		<ul class="table-of-contents clearfix">
+			<a href="index.html#html"><li>HTML</li></a>
+			<a href="index.html#css"><li>CSS</li></a>
+			<a href="index.html#javascript"><li>Javascript</li></a> 
+			<a href="index.html#php"><li>PHP</li></a>
+			<a href="index.html#algorithms"><li>Algorithms</li></a>
+			<a href="index.html#vim"><li>Vim</li></a>
+			<a href="index.html#git"><li>Git</li></a>
+
+		</ul>
+		<h1>Other TOC</h1>
+		<ul class="table-of-contents clearfix">
+			<a href=""><li></li></a>
+			<a href=""><li></li></a>
+			<a href=""><li></li></a>
+			<a href=""><li></li></a>
+			<a href=""><li></li></a>
+		</ul>
+		<div class="section">
+			<h1 class="section-header" id="html">HTML</h1>
+			<ul class="table-of-contents">	
+				<a href="index.html#doctype"><li>< !DOCTYPE html></li></a>	
+				<a href="index.html#semantic-tags"><li>Semantic Tags</li></a>
+			</ul> <!--table-of-contents-->
+			<div class="section-content">
+				<h2 id="doctype">< !DOCTYPE html></h2>
+				<p>Introduced in HTML 5 (without the space after the initial less than sign.</p>
+				<p>Previous examples being 
+					<table class="data-table">
+						<thead><tr><th colspan="2">Previous HTML examples</th></tr></thead>	
+						<tr><th>HTML 4</th><th>HTML 3</th></tr>
+						<tr><td>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/tr/html4/strict.dtd"></td><td>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 2.3//EN"></td></tr>
+					</table>
+				</p>
+				<h2 id="semantic-tags">Semantic Tags</h2>
+				<p>The names of semantic tags refer to the type of information stored within them. For example, a table stores a table. An article stores an article. A form is a form to fill out. </p>
+				<p> Non-semantic tags, such as div, server general purposes</p>
+			</div><!--section-content-->
+		</div><!---section-->
+		<div class="section">
+			<h1 class="section-header" id="css">CSS</h1>
+			<ul class="table-of-contents">
+				<a href="index.html#processing"><li>Processing</li></a>
+				<a href="index.html#Selectors"><li>Selectors</li></a>
+				<a href="index.html#margin-padding"><li>Margin/Padding</li></a>
+				<a href="index.html#clear-both"><li>Clear: Both</li></a>
+				<a href="index.html#clearfix"><li>Clearfix</li></a>
+				<a href="index.html#box-shadow"><li>Box-shadow</li></a>
+				<a href="index.html#media-queries"><li>Media Queries</li></a>
+				<a href="index.html#initial-value"><li>Initial Value</li></a>
+			</ul>
+			<div class="section-content">
+				<h2 id="css-processing">Processing</h2>
+				<p>In CSS, the page is processed from top to bottom. That means that CSS on the bottom of the page overrides CSS at the bottom of the page. </p>
+				<h2 id="Selectors">Selectors</h2>
+				<p>When CSS elements are laid out in a CSS stylesheet with only spaces between them, the CSS rule applies to nested elements in that specific order.</p>
+				<p>If CSS classes or IDs are directly next to eachother, that means both are required for the rule to be enacted. I am not sure if normal html elements work the same, but I assume not. </p>
+				<h2 id="margin-padding">Margin/Padding</h2>
+				<p>For Margin or Padding property in CSS, the order is Top/Bottom Right/Left, or Top, Right, Bottom, Left with no commas. Only spaces separate these values.
+				<h2 id="clear-both">Clear: Both</h2>
+				<p>Clear both will ignore floats form both sides and place itself below those elements. </p>
+				<h2 id="clearfix">Clearfix</h2>
+				<p>The following class may be applied to make the size of the parent element the same as the children<p class="code"><code>clearfix::after{<br>clear:both;<br>content: "";<br>display:table;}</code></p >There are some apparent stipulations that I have not looked into that will cause scrollbars to appear if improper margin and padding settings are employed.</p>
+				<h2 id="box-shadow">Box-shadow</h2>
+				<p>Box-shadow properties operate as the following: <p class="code"><code>x-offset:</code></p> and <p class="code"><code>y-offset:</code></p> will adjust shadow in x and y directions. Other options include blur, color, and spread. Color changes color, blur increases blur, and spread increases size.</p> 
+				<h2 id="media-queries">Media Queries</h2>
+				<p>While media queries commonly check for screen size or resolution, they can also check for other things such as orientation (landscape or portrait), or if the document is being printed.</p>
+				<h2 id="initial-value">Initial value</h2>
+				<p>If the initial value is used for a rule, it will set the value to the previous, initial value. If there is no initial value that was set by the user, the initial value of the document will be set. This may be useful for font sizes but I'm not sure.</p>
+			</div>
 		</div>
-		<div class="section" id="css">
-			<h1>CSS</h1>
-			<a href="#"></a>
+		<div class="section">
+			<h1 class="section-header" id="javascript">Javascript</h1>
+			<div class="table-of-contents">
+				<a href="#"></a>
+			</div>
 		</div>
-		<div class="section" id="javascript">
-			<h1>Javascript</h1>
-			<a href="#"></a>
+		<div class="section">
+			<h1 class="section-header" id="php">PHP</h1>
+			<div class="table-of-contents">
+				<a href="#"></a>
+			</div>
 		</div>
-		<div class="section" id="php">
-			<h1>PHP</h1>
-			<a href="#"></a>
+		<div class="section">
+			<h1 class="section-header" id="algorithms">Algorithms</h1>
+			<div class="table-of-contents">
+				<a href="#"></a>
+			</div>
 		</div>
-		<div class="section" id="algorithms">
-			<h1>Algorithms</h1>
-			<a href="#"></a>
-		</div>
-		<div class="section" id="vim">
-			<h1>VIM</h1>
-			<a href="#"></a>
+		<div class="section">
+			<h1 class="section-header" id="vim">VIM</h1>
+			<div class="table-of-contents">
+				<a href="#"></a>
+			</div>
 		</div>	
-		<div class="section" id="git">
-			<h1>Git</h1>
-			<a href="#"></a>
+		<div class="section">
+			<h1 class="section-header" id="git">Git</h1>
+			<ul class="table-of-contents">
+				<a href="index.html#git-ssh"><li>SSH</li></a>
+			</ul>
+			<h2 id="git-ssh">SSH</h2>
+			<p>Git SSH is initialized using: <p class="code"><code>eval $(ssh-agent -s)<br>ssh-add ~/.ssh/KEYNAME.ssh</code></p>For some reason my settings keep resetting and I need to input this every single time. It is good practice regardless.</p>
 		</div>	
 	</main>
 </body>
