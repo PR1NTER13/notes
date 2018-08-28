@@ -111,6 +111,8 @@
 			</ul>
 			<h2 id="git-ssh">SSH</h2>
 			<p>Git SSH is initialized using: <p class="code"><code>eval $(ssh-agent -s)<br>ssh-add ~/.ssh/KEYNAME.ssh</code></p>For some reason my settings keep resetting and I need to input this every single time. It is good practice regardless.</p>
+			<h2 id="git-push">Push</h2>
+			<p>The following are directions to push into a repository<br>First, initialize in the correct directory. <br><p class="code"><code>git init</code></p>Then, add the new files. This command adds them all: <p class="code"><code>git add .</code></p>Next, create a commit and add a description: <p class="code"><code>git commit -m "DESCRIPTION"</code></p>Use <p class="code"><code>git remote add origin REMOTE-REPOSITORY-URL</code></p>then <p class="code"><code>git remote -v</code></p>to add your own git url that you are uploading to, then verify it.<br><br>Finally, push it to your repository <p class="code"><code>git push origin master</code></p>Some of these steps are not necessary if you already did the steps in this section before.</p>
 		</div>	
 	</main>
 </body>
