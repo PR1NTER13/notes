@@ -8,6 +8,7 @@
 <body>
 	<main class="content">
 		<h1 class="header">PR1NTER13 General Manual</h1>
+		<p>Repository located at <a href="https://github.com/PR1NTER13/notes">PR1NTER13 Github</a></p>
 		<h1>Computer/Math TOC</h1>
 		<ul class="table-of-contents clearfix">
 			<a href="index.html#html"><li>HTML</li></a>
@@ -17,12 +18,14 @@
 			<a href="index.html#algorithms"><li>Algorithms</li></a>
 			<a href="index.html#vim"><li>Vim</li></a>
 			<a href="index.html#git"><li>Git</li></a>
+			<a href="index.html#bitcoin"><li>Bitcoin</li></a>
+			<a href="index.html#ethereum"><li>Ethereum</li></a>
 
 		</ul>
 		<h1>Other TOC</h1>
 		<ul class="table-of-contents clearfix">
-			<a href=""><li></li></a>
-			<a href=""><li></li></a>
+			<a href="index.html#phrases"><li>Phrases</li></a>
+			<a href="index.html#questions"><li>Questions</li></a>
 			<a href=""><li></li></a>
 			<a href=""><li></li></a>
 			<a href=""><li></li></a>
@@ -30,11 +33,11 @@
 		<div class="section">
 			<h1 class="section-header" id="html">HTML</h1>
 			<ul class="table-of-contents">	
-				<a href="index.html#doctype"><li>< !DOCTYPE html></li></a>	
-				<a href="index.html#semantic-tags"><li>Semantic Tags</li></a>
+				<a href="index.html#html-doctype"><li>< !DOCTYPE html></li></a>	
+				<a href="index.html#html-semantic-tags"><li>Semantic Tags</li></a>
 			</ul> <!--table-of-contents-->
 			<div class="section-content">
-				<h2 id="doctype">< !DOCTYPE html></h2>
+				<h2 id="html-doctype">< !DOCTYPE html></h2>
 				<p>Introduced in HTML 5 (without the space after the initial less than sign.</p>
 				<p>Previous examples being 
 					<table class="data-table">
@@ -43,7 +46,7 @@
 						<tr><td>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/tr/html4/strict.dtd"></td><td>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 2.3//EN"></td></tr>
 					</table>
 				</p>
-				<h2 id="semantic-tags">Semantic Tags</h2>
+				<h2 id="html-semantic-tags">Semantic Tags</h2>
 				<p>The names of semantic tags refer to the type of information stored within them. For example, a table stores a table. An article stores an article. A form is a form to fill out. </p>
 				<p> Non-semantic tags, such as div, server general purposes</p>
 			</div><!--section-content-->
@@ -51,33 +54,42 @@
 		<div class="section">
 			<h1 class="section-header" id="css">CSS</h1>
 			<ul class="table-of-contents">
-				<a href="index.html#processing"><li>Processing</li></a>
-				<a href="index.html#Selectors"><li>Selectors</li></a>
-				<a href="index.html#margin-padding"><li>Margin/Padding</li></a>
-				<a href="index.html#clear-both"><li>Clear: Both</li></a>
-				<a href="index.html#clearfix"><li>Clearfix</li></a>
-				<a href="index.html#box-shadow"><li>Box-shadow</li></a>
-				<a href="index.html#media-queries"><li>Media Queries</li></a>
-				<a href="index.html#initial-value"><li>Initial Value</li></a>
+				<a href="index.html#css-processing"><li>Processing</li></a>
+				<a href="index.html#css-selectors"><li>Selectors</li></a>
+				<a href="index.html#css-margin-padding"><li>Margin/Padding</li></a>
+				<a href="index.html#css-clear-both"><li>Clear: Both</li></a>
+				<a href="index.html#css-clearfix"><li>Clearfix</li></a>
+				<a href="index.html#css-box-shadow"><li>Box-shadow</li></a>
+				<a href="index.html#css-media-queries"><li>Media Queries</li></a>
+				<a href="index.html#css-initial-value"><li>Initial Value</li></a>
+				<a href="index.html#css-grid"><li>Grid</li></a>
+				<a href="index.html#css-clip"><li>Clip</li></a>
 			</ul>
 			<div class="section-content">
 				<h2 id="css-processing">Processing</h2>
 				<p>In CSS, the page is processed from top to bottom. That means that CSS on the bottom of the page overrides CSS at the bottom of the page. </p>
-				<h2 id="Selectors">Selectors</h2>
+				<h2 id="css-selectors">Selectors</h2>
 				<p>When CSS elements are laid out in a CSS stylesheet with only spaces between them, the CSS rule applies to nested elements in that specific order.</p>
 				<p>If CSS classes or IDs are directly next to eachother, that means both are required for the rule to be enacted. I am not sure if normal html elements work the same, but I assume not. </p>
-				<h2 id="margin-padding">Margin/Padding</h2>
+				<h2 id="css-margin-padding">Margin/Padding</h2>
 				<p>For Margin or Padding property in CSS, the order is Top/Bottom Right/Left, or Top, Right, Bottom, Left with no commas. Only spaces separate these values.
-				<h2 id="clear-both">Clear: Both</h2>
+				<h2 id="css-clear-both">Clear: Both</h2>
 				<p>Clear both will ignore floats form both sides and place itself below those elements. </p>
-				<h2 id="clearfix">Clearfix</h2>
+				<h2 id="css-clearfix">Clearfix</h2>
 				<p>The following class may be applied to make the size of the parent element the same as the children<p class="code"><code>clearfix::after{<br>clear:both;<br>content: "";<br>display:table;}</code></p >There are some apparent stipulations that I have not looked into that will cause scrollbars to appear if improper margin and padding settings are employed.</p>
-				<h2 id="box-shadow">Box-shadow</h2>
+				<h2 id="css-box-shadow">Box-shadow</h2>
 				<p>Box-shadow properties operate as the following: <p class="code"><code>x-offset:</code></p> and <p class="code"><code>y-offset:</code></p> will adjust shadow in x and y directions. Other options include blur, color, and spread. Color changes color, blur increases blur, and spread increases size.</p> 
-				<h2 id="media-queries">Media Queries</h2>
+				<h2 id="css-media-queries">Media Queries</h2>
 				<p>While media queries commonly check for screen size or resolution, they can also check for other things such as orientation (landscape or portrait), or if the document is being printed.</p>
-				<h2 id="initial-value">Initial value</h2>
+				<h2 id="css-initial-value">Initial value</h2>
 				<p>If the initial value is used for a rule, it will set the value to the previous, initial value. If there is no initial value that was set by the user, the initial value of the document will be set. This may be useful for font sizes but I'm not sure.</p>
+				<h2 id="css-grid">Grid</h2>
+				<p>CSS grid has revolutionized the CSS landscape. Something like <p class="code"><code>grid-template column: 200px 200px 200px;</code></p> will create three columns of 200px. New unit <strong>fr</strong>, which stands for fraction, will allocate equally for number of fractions available. A repeat function exists  <p class="code"><code>grid-template-columns:repeat(3, 1fr);</code></p> will give the same output as <p class="code"><code>grid-template-column: 1fr 1fr 1fr;</code></p>Repeat can be used with other values and <code>grid-template-column</code> creates implicit rows. That means one row.<br><p class="code"><code>grid-auto-rows:</code></p>will take values for size of rows.<p class="code"><code>grid-justify-items:</code></p>Grid by default takes into account borders in an elements sizing, which is super convenient in my experience. Multidirectional floats?</p>
+				<h2 id="css-clip">Clip</h2>
+				<p>Clip allows for a rectable to be cropped in a webpage. This option is normally used for accessibility purposes.</p>
+				<h2 id="css-transform">Transform</h2>
+				<p><code>Transform:</code> allows for the transformation of a 2d or 3d transformation to an object? No idea what that means. Need to Google.</p>
+
 			</div>
 		</div>
 		<div class="section">
@@ -114,7 +126,49 @@
 			<p>Git SSH is initialized using: <p class="code"><code>eval $(ssh-agent -s)<br>ssh-add ~/.ssh/KEYNAME.ssh</code></p>For some reason my settings keep resetting and I need to input this every single time. It is good practice regardless.</p>
 			<h2 id="git-push">Push</h2>
 			<p>The following are directions to push into a repository<br>First, initialize in the correct directory. <br><p class="code"><code>git init</code></p>Then, add the new files. This command adds them all: <p class="code"><code>git add .</code></p>Next, create a commit and add a description: <p class="code"><code>git commit -m "DESCRIPTION"</code></p>Use <p class="code"><code>git remote add origin REMOTE-REPOSITORY-URL</code></p>then <p class="code"><code>git remote -v</code></p>to add your own git url that you are uploading to, then verify it.<br><br>Finally, push it to your repository <p class="code"><code>git push origin master</code></p>Some of these steps are not necessary if you already did the steps in this section before.</p>
-		</div>	
+		</div>
+		<div class="section">
+			<h1 class="section-header" id="bitcoin">Bitcoin</h1>
+			<ul class="table-of-contents">
+				<a href="index.html#bitcoin-unspent-transactions"><li>Unspent Transactions</li></a>
+				<a href="index.html#bitcoin-digital-wallets"><li>Digital Wallets</li></a>
+			</ul>
+			<h2 id="bitcoin-unspent-transactions">Unspent Transactions</h2>		
+			<p>Bitcoin does not maintain user balances. Users hold the right to <strong>Unspent Trasaction Outputs (UTXO)</strong> which are in factors of one. I am unclear on how this completely works</p>
+			<h2 id="bitcoin-digital-wallets">Digital Wallets</h2>	
+			<p>Digital wallets handle the UTXOs, storing keys, transaction fees, giving return addresses, and combining UTXO's when the bitcoins being transferred are not in factors of one.</p>
+
+		</div>
+		<div class="section">
+			<h1 id="ethereum" class="section-header">Ethereum</h1>		
+			<ul class="table-of-contents">
+				<a href="index.html#ethereum-data-types"><li>Data Types</li></a>		
+			</ul>
+			<h2 id="ethereum-data-types">Data Types</h2>	
+			<p>Ethereum uses two data types <strong>permanent</strong> and <strong>ephemeral</strong> </p>
+
+		</div>
+		<hr class="section-end">
+		<hr> <!-- NON-MATH AND NON-CS SECTION BEGINS BELOW-->
+		<hr >
+		<p ><strong><h1 class="header">Section two is beginning :)</h1></strong></p>
+		<div class="section">
+			<h1 class="section-header" id="phrases">Phrases</h1> 
+			<ul class="table-of-contents">
+				<a href="index.html#phrases-technical-debt"><li>Technical Debt</li></a>	
+			</ul>
+			<h2 id="phrases-technical-debt">Technical Debt</h2>
+			<p>Bad code etc that should be rewritten. Has application in operation of business.</p>
+		</div>
+		<div class="section">
+			<h1 class="section-header" id="questions">Questions</h1>
+			<ul class="table-of-contents">
+				<a href="index.html-questions-human-phobias"><li>Human Phobias</li></a>
+			</ul>
+			<h2 id="questions-human-phobias">Human Phobias</h2>
+			<p class="question">Are human phobias of membranes or things like honey comb where there are a lot of wholes based on real sense data?</p>
+			<p class="answer">Viruses travel in membranes/packs where they group together in biofilm (I believe), which is what inspired this question. I do not doubt there is unconscious intuition involved.</p>
+		</div>
 	</main>
 </body>
 </html>

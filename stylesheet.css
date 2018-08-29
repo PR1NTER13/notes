@@ -16,7 +16,12 @@ main {
 	clear: both;
 	display: table;
 }
-
+.section-end{
+	margin-top: 250px;
+}
+.section-beginning{
+	margin-bottom: 250px;
+}
 /*Layout*/
 /********/
 
@@ -33,12 +38,13 @@ main {
 	border-bottom: 1px dashed grey;
 
 }
-.code {
+code {
 	
 	border: 1px solid black;
-	max-width: 250px;
+	max-width: 500px;
 	background-color: grey;
 	color: white;
+	display: inline-block;
 }
 .section-header {
 	border-top: 2px solid black;
