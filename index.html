@@ -11,6 +11,7 @@
 		<p>Repository located at <a href="https://github.com/PR1NTER13/notes">PR1NTER13 Github</a></p>
 		<h1>Computer/Math TOC</h1>
 		<ul class="table-of-contents clearfix">
+			<a href="index.html#general"><li>General Computer Stuff</li></a>
 			<a href="index.html#html"><li>HTML</li></a>
 			<a href="index.html#css"><li>CSS</li></a>
 			<a href="index.html#javascript"><li>Javascript</li></a> 
@@ -26,15 +27,32 @@
 		<ul class="table-of-contents clearfix">
 			<a href="index.html#phrases"><li>Phrases</li></a>
 			<a href="index.html#questions"><li>Questions</li></a>
-			<a href=""><li></li></a>
+			<a href="index.html#definitions"><li>Definitions</li></a>
 			<a href=""><li></li></a>
 			<a href=""><li></li></a>
 		</ul>
+
+		<div class="section">
+			<h1 id="general" class="section-header">General</h1>
+			<ul class="table-of-contents">
+				<a href=""><li></li></a>
+			</ul>
+			<div class="section-content">
+				<h2 id="general-images">Images</h2>
+				<p>.jpeg is better for photos and .png for solid color items. .gif for tiny things.</p>
+				<h2 id="genera-http">HTTP</h2>
+				<p>stands for hyper text transfer protocol.</p>
+			</div>
+		</div>
 		<div class="section">
 			<h1 class="section-header" id="html">HTML</h1>
 			<ul class="table-of-contents">	
 				<a href="index.html#html-doctype"><li>< !DOCTYPE html></li></a>	
 				<a href="index.html#html-semantic-tags"><li>Semantic Tags</li></a>
+				<a href="index.html#html-name"><li>Name</li></a>
+				<a href="index.html#html-years"><li>Years</li></a>
+				<a href="index.html#html-general"><li>General</li></a>
+				<a href="index.html#html-description-list"><li>Description List</li></a>
 			</ul> <!--table-of-contents-->
 			<div class="section-content">
 				<h2 id="html-doctype">< !DOCTYPE html></h2>
@@ -46,9 +64,32 @@
 						<tr><td>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/tr/html4/strict.dtd"></td><td>< !DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 2.3//EN"></td></tr>
 					</table>
 				</p>
+				
 				<h2 id="html-semantic-tags">Semantic Tags</h2>
 				<p>The names of semantic tags refer to the type of information stored within them. For example, a table stores a table. An article stores an article. A form is a form to fill out. </p>
+
+				<h2 id="html-name">Name</h2>
+				<p>Hypertext Markup Language</p>
+				<p>Used to describe web pages.</p>
+
+				<h2 id="html-years">Timeline</h2>
+				<p>HTML = 1991 <br> HTML 2.0 = 1995 <br> HTML 3.2 = 1997 <br> HTML 4.01 = 1999 <br> XHTML = 2000 <br> HTML5 = 2014</p>
 				<p> Non-semantic tags, such as div, server general purposes</p>
+
+				<h2 id="html-general">General</h2>
+				<p>Browser does not parse carriage returns or spaces.</p>
+
+				<h2 id="html-p-tag">P Tag</h2>
+				<p><code>"<span>< p></span>"</code> adds line break before and after</p>
+				<p><code>< hr></code> is horizontal rule, which adds a long line across the page. One may style this as a male phallus.</p>
+				<p>For links <code>target=""</code> will tell the browser where the page should be loaded.</p>
+
+				<h2 id="html-description-list">Description List</h2>
+				<p><code>dl</code> means description list</p>
+				<p><code>dt</code> means description type</p>
+				<p><code>dd</code> means data description</p>
+				
+				
 			</div><!--section-content-->
 		</div><!---section-->
 		<div class="section">
@@ -95,8 +136,60 @@
 		<div class="section">
 			<h1 class="section-header" id="javascript">Javascript</h1>
 			<div class="table-of-contents">
-				<a href="#"></a>
+				<a href="index.html#javascript-first-class-functions">First Class Functions</a>
+				<a href="index.html#javascript-event-driven-environment"><li>Event Driven Environment</li></a>
+				<a href="index.html#javascript-closure"><li>Closure</li></a>
+				<a href="index.html#javascript-scope"><li>Scope</li></a>
+				<a href="index.html#javascript-context"><li>Context</li></a>
 			</div>
+			<h2 id="javascript-first-class-functions">First Class Functions</h2>
+			<p>Functions are treated as any variable would be and can be passed as arguments</p>
+			<h2 id="javascript-event-driven-environment">Event Driven Environment</h2>
+			<p>Listeners that watch for specific events of different types make things happen and are part of what drives Javascript at its core.</p>
+			<p>Only the event that is being listened for will load when triggered, not the whole page. This leads to faster load speeds</p>
+			<h2 id="javascript-closure">Closure</h2>
+			<p>Javascript notices use of a variable outside of the scope of an event, and will save the variable for further use. For example If a varialbe has been saved in memory due to use in an event/function, it is a closure. </p>
+			<p><p class="code"><code>.removeEventListener</code></p>will take a variable out of closure. This is useful due to memory leaks, if a memory leak happens the user experience may be fucked.</p>
+			<h2 id="javascript-scope">Scope</h2>
+			<p>Scope is where variables are able to be accessed.</p>
+			
+			<h2 id="javascript-context">Context</h2>
+			<p>Context is the value of javascript tool <code>this</code></p>
+			<p>The root scope in HTML is the window object.</p>
+			<p>If var is created in scope of a child function it will be undefined in a parent function call, however children have access to parent variables</p>
+			<p>Scope conflict is defining a variable in child scope that already exists in a parent scope.</p>
+			<p>Child function looks for variable within its own scope before looking through parent element. If it looks through parent element regardless, I do not know.</p>
+			<p>Polluting the root scope is forgetting to define a variable. Strict mode will help check for pollution.</p>
+			<p>In the root scope, this is the window.</p>
+			<p>If a function is run from the window, <code>this</code> will still be in the window because that is what it was run in.</p>
+			<p>There are three ways to change context 
+				<ul> 
+					<li>Call</li>
+					<li>Apply</li>
+					<li>Bind</li>
+				</ul>
+			</p>
+			<p><p class="code"><code>object = {foo:function(){console.log(this)</code></p></p>
+			<p><p class="code"><code>window.object=obj is this</code></p></p>
+			<p>
+				<p class="code"><code>obj.foo.call(window)=window is this</code></p>
+			</p>
+			<p>Giving call more than one argument is passing arguments to the function.</p>
+			<p>Apply is the same as call, except it takes two arguments and the second argument is an array.</p>
+			<p>Bind doesn't apply context. Bind binds a function to an ojbect. For example binding an obj to window will always return that object within the context window</p>
+			<p>find will search within context of this (?)</p>
+
+			<h2 id="javascript-modular">Modular Javascript</h2>
+			<p>Self contained code with no global variables. Manages a single thing at a time.</p>
+			<p>DRY = Do not Repeat Yourself.</p>
+			<p>Unbind all events because of memory leaks.</p>
+			<p>Use dom effeciently. Use Javascript selectors as little as possible.</p>
+			<p>Global vars slow performance.</p>
+		
+			<h2 id="javascript-api">API</h2>
+			<p>This could probably be its own section</p>
+			<p>An Api can be a var object with two functions in it.</p>
+			
 		</div>
 		<div class="section">
 			<h1 class="section-header" id="php">PHP</h1>
@@ -121,11 +214,28 @@
 			<ul class="table-of-contents">
 				<a href="index.html#git-ssh"><li>SSH</li></a>
 				<a href="index.html#git-push"><li>Push</li></a>
+				<a href="index.html#git-general"><li>General</li></a>
+				<a href="index.html#git-pull"><li>Pull</li></a>
+				<a href="index.html#git-clone"><li>Clone</li></a>
 			</ul>
+
 			<h2 id="git-ssh">SSH</h2>
 			<p>Git SSH is initialized using: <p class="code"><code>eval $(ssh-agent -s)<br>ssh-add ~/.ssh/KEYNAME.ssh</code></p>For some reason my settings keep resetting and I need to input this every single time. It is good practice regardless.</p>
+
 			<h2 id="git-push">Push</h2>
+			<p>Push will upload to Git</p>
 			<p>The following are directions to push into a repository<br>First, initialize in the correct directory. <br><p class="code"><code>git init</code></p>Then, add the new files. This command adds them all: <p class="code"><code>git add .</code></p>Next, create a commit and add a description: <p class="code"><code>git commit -m "DESCRIPTION"</code></p>Use <p class="code"><code>git remote add origin REMOTE-REPOSITORY-URL</code></p>then <p class="code"><code>git remote -v</code></p>to add your own git url that you are uploading to, then verify it.<br><br>Finally, push it to your repository <p class="code"><code>git push origin master</code></p>Some of these steps are not necessary if you already did the steps in this section before.</p>
+
+			<h2 id="git-general">General</h2>
+			<p>Files are uploaded and saved.</p>
+
+			<h2 id="git-pull">Pull</h2>
+			<p>Git pull will pull file from latest repository.</p>
+
+			<h2 id="git-clone">Clone</h2>
+			<p>Git clone will copy a pull request into current directory.</p>
+
+
 		</div>
 		<div class="section">
 			<h1 class="section-header" id="bitcoin">Bitcoin</h1>
@@ -168,6 +278,16 @@
 			<h2 id="questions-human-phobias">Human Phobias</h2>
 			<p class="question">Are human phobias of membranes or things like honey comb where there are a lot of wholes based on real sense data?</p>
 			<p class="answer">Viruses travel in membranes/packs where they group together in biofilm (I believe), which is what inspired this question. I do not doubt there is unconscious intuition involved.</p>
+		</div>
+
+		<div class="section">
+			<h1 id="definitions" class="section-header">Definitions</h1>
+			<ul class="table-of-contents">
+				<a href="index.html#definitions-graduated"><li>Graduated</li></a>
+			</ul>
+			
+			<h2 id="general-graduated">Graduated</h2>
+			<p>A graduaated image has gradual transparency.</p>
 		</div>
 	</main>
 </body>
