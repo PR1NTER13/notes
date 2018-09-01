@@ -17,6 +17,7 @@
 			<a href="index.html#css"><li>CSS</li></a>
 			<a href="index.html#javascript"><li>Javascript</li></a> 
 			<a href="index.html#php"><li>PHP</li></a>
+			<a href="index.html#sql"><li>SQL</li></a>
 			<a href="index.html#algorithms"><li>Algorithms</li></a>
 			<a href="index.html#vim"><li>Vim</li></a>
 			<a href="index.html#git"><li>Git</li></a>
@@ -37,13 +38,29 @@
 			<h1 id="general" class="section-header">General</h1>
 			<ul class="table-of-contents">
 				<a href="index.html#general-images"><li>Images</li></a>
-				<a href="index.html#genera-http"><li>HTTP</li></a>
+				<a href="index.html#general-http"><li>HTTP</li></a>
+				<a href="index.html#general-design"><li>Design</li></a>
+				
 			</ul>
 			<div class="section-content">
 				<h2 id="general-images">Images</h2>
 				<p>.jpeg is better for photos and .png for solid color items. .gif for tiny things.</p>
-				<h2 id="genera-http">HTTP</h2>
+
+				<h2 id="general-http">HTTP</h2>
 				<p>stands for hyper text transfer protocol.</p>
+
+				<h2 id="general-design">Design</h2>
+					<p>Four types of design 
+						<ol>
+							<li>Fixed</li>
+							<li>Liquid</li>
+							<li>Adaptive</li>
+							<li>Responsive</li>
+							<li>Static</li>
+						</ol>
+					</p>
+					<p><strong>liquid</strong> means text and images flow depending on resolution but do not resize.</p>
+					
 			</div>
 		</div>
 		<div class="section">
@@ -55,6 +72,14 @@
 				<a href="index.html#html-years"><li>Years</li></a>
 				<a href="index.html#html-general"><li>General</li></a>
 				<a href="index.html#html-description-list"><li>Description List</li></a>
+				<a href="index.html#html-forms"><li>Forms</li></a>
+				<a href="index.html#html-anchor"><li>Anchors</li></a>
+				<a href="index.html#html-dropdown"><li>Dropdown</li></a>
+				<a href="index.html#html-textarea"><li>Text Area</li></a>
+				<a href="index.html#html-attribute"><li>Attributes</li></a>
+				<a href="index.html#html-radio"><li>Radio</li></a>
+				<a href="index.html#html-table"><li>Table</li></a>
+				<a href="index.html#html-meta"><li>Meta tag</li></a>
 			</ul> <!--table-of-contents-->
 			<div class="section-content">
 				<h2 id="html-doctype">< !DOCTYPE html></h2>
@@ -90,7 +115,46 @@
 				<p><code>dl</code> means description list</p>
 				<p><code>dt</code> means description type</p>
 				<p><code>dd</code> means data description</p>
-				
+
+				<h2 id="html-forms">Forms</h2>
+				<p><code>name=form-name</code> is the name of the form.</p>
+				<p><code>type=text, password, submit</code> are different types of forms.</p>
+				<p><code>action=index.php</code> will send the information to named page.</p>
+				<p>The <strong>query string</strong> is what comes after the url and lets the browser know what to do when using get method.</p>
+				<p>Get can only send 3000 characters max.</p>
+
+				<h2 id="html-anchor">Anchors</h2>
+				<p></p>
+
+				<h2 id="html-dropdown">Dropdown</h2>
+				<p><code>< select> and < option></code> are dropdown</p>
+
+				<h2 id="html-textarea">Text Area</h2>
+				<p>Has option <code>row=</code> and option <code>col=</code> to set size of text area.</p>
+
+				<h2 id="html-attribute">Attributes</h2>
+				<p>Attributes are the values within a tag.</p>
+
+				<h2 id="html-radio">Radio</h2>
+				<p>In a radio select, only one option may be selected in the group.</p>
+
+				<h2 id="html-table">Table</h2>
+				<p><code>Tr</code> is table row, <code>td</code> is table data.</p>
+				<p>colspan is an attribute for <code>td</code> which sets span of column.</p>
+				<p><code>tfoot</code> is table footer which is always displayed at the bottom no matter where it is placed.</p>
+				<p><code>thead</code> is table header which is always displayed at the top no matter where it is located in the table.</p>
+				<p><code>tbody</code> is the body of the table.</p>
+
+				<h2 id="html-meta">Meta Tag</h2>
+				<p>The <code>meta</code> tag allows name, description, or keywords to displayed for search engine results.</p>
+
+				<h2 id="html-lang">Lang</h2>
+				<p>lang is an attribute that can be added to any tag.</p>
+
+				<h2 id="html-head">Head</h2>
+				<p><code>head</code> is not necessary in HTML-5</p>
+
+
 				
 			</div><!--section-content-->
 		</div><!---section-->
@@ -107,6 +171,13 @@
 				<a href="index.html#css-initial-value"><li>Initial Value</li></a>
 				<a href="index.html#css-grid"><li>Grid</li></a>
 				<a href="index.html#css-clip"><li>Clip</li></a>
+				<a href="index.html#css-general"><li>General</li></a>
+				<a href="index.html#css-font-weight"><li>Font Weight</li></a>
+				<a href="index.html#css-font-family"><li>Font Family</li></a>
+				<a href="index.html#css-vw"><li>VW</li></a>
+				<a href="index.html#css-em"><li>EM</li></a>
+				<a href="index.html#css-font-face"><li>Font Face</li></a>
+				<a href="index.html#css-background-property"><li>Background Property</li></a>
 			</ul>
 			<div class="section-content">
 				<h2 id="css-processing">Processing</h2>
@@ -132,6 +203,36 @@
 				<p>Clip allows for a rectable to be cropped in a webpage. This option is normally used for accessibility purposes.</p>
 				<h2 id="css-transform">Transform</h2>
 				<p><code>Transform:</code> allows for the transformation of a 2d or 3d transformation to an object? No idea what that means. Need to Google.</p>
+
+				<h2 id="css-general">General</h2>
+				<p>if <code>p .italic</code> is used then css will look for the class italic within p tags.</p>
+				<p>if <code>p.italic</code> is used then p tag with italic class is selected.</p>
+				<p>bold and bolder are the same.</p>
+
+				<h2 id="css-font-weight">Font-Weight</h2>
+				<p>Px should not be used with font-weight.</p>
+
+				<h2 id="css-font-family">Font-Family</h2>
+				<p>the various options passed to font-family will be the fonts the browser looks for from left to right.</p>
+				<p>Serif is a flair at extremities of the font.</p>
+				<p>Sans-serif has flair at extremities of the font.</p>
+				<p>fonts and overall design are super important.</p>
+
+				<h2 id="css-vw">VW</h2>
+				<p>Added in CSS 4 I believe. Is 1% of the width of a window.</p>
+
+				<h2 id="css-em">EM</h2>
+				<p>Sizing measure based on base size of font on page.</p>
+
+				<h2 id="css-font-face">Font-face</h2>
+				<p>Font-face allows for fonts to be used on a website that is not normally installed. Google fonts is a newer method that is probably better.</p>
+
+				<h2 id="css-background-property">Background Property</h2>
+				<p>Background property.</p>
+
+
+
+
 
 			</div>
 		</div>
@@ -197,6 +298,23 @@
 			<h1 class="section-header" id="php">PHP</h1>
 			<div class="table-of-contents">
 				<a href="#"></a>
+			</div>
+		</div>
+
+		<div class="section">
+			<h1 id="sql" class="section-header">SQL</h1>
+			<div class="table-of-contents">
+				<a href="index.html#sql-injections"><li>Injections</li></a>
+				<a href="index.html#sql-prepared-statements"><li>Prepared Statements</li></a>
+			</div>
+			<div class="section-content">
+				<h2 id="sql-injections">Injections</h2>
+				<p>To prevent sql injections, put \ before dangerous characters in submit fields.</p>
+
+				<h2 id="sql-prepared-statements">Prepared Statements</h2>
+				<p>Use this hack to prevent commands from data in the webpage. Look up security guidelines!</p>
+
+
 			</div>
 		</div>
 		<div class="section">
