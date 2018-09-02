@@ -60,6 +60,12 @@
 						</ol>
 					</p>
 					<p><strong>liquid</strong> means text and images flow depending on resolution but do not resize.</p>
+					<h2 id="general-definition">Definitions</h2>
+					<p><strong>Boiler plate</strong> is basic setup code used to get a site off its feet.</p>
+					<p><strong>Parallax effect</strong> is using a stationary background image with text and objects scrolling over top of it.</p>
+
+					<p><strong>Bang Operator</strong>is what we call <code>!= </code></p>
+					<p><strong>Camel Case</strong>thisIsCamelCase.</p>
 					
 			</div>
 		</div>
@@ -162,12 +168,12 @@
 			<h1 class="section-header" id="css">CSS</h1>
 			<ul class="table-of-contents">
 				<a href="index.html#css-processing"><li>Processing</li></a>
-				<a href="index.html#css-selectors"><li>Selectors</li></a>
+				<a href="index.html#css-selectory"><li>Selectors</li></a>
 				<a href="index.html#css-margin-padding"><li>Margin/Padding</li></a>
 				<a href="index.html#css-clear-both"><li>Clear: Both</li></a>
 				<a href="index.html#css-clearfix"><li>Clearfix</li></a>
 				<a href="index.html#css-box-shadow"><li>Box-shadow</li></a>
-				<a href="index.html#css-media-queries"><li>Media Queries</li></a>
+				<a href="index.html#css-media-query"><li>Media Queries</li></a>
 				<a href="index.html#css-initial-value"><li>Initial Value</li></a>
 				<a href="index.html#css-grid"><li>Grid</li></a>
 				<a href="index.html#css-clip"><li>Clip</li></a>
@@ -178,11 +184,20 @@
 				<a href="index.html#css-em"><li>EM</li></a>
 				<a href="index.html#css-font-face"><li>Font Face</li></a>
 				<a href="index.html#css-background-property"><li>Background Property</li></a>
+				<a href="inex.html#css-box"><li>Box</li></a>
+				<a href="index.html#css-border"><li>Borders</li></a>
+				<a href="index.html#css-pseudoclass"><li>Pseudoclasses</li></a>
+				<a href="index.html#css-list"><li>List</li></a>
+				<a href="index.html#css-width"><li>Width</li></a>
+				<a href="index.html#css-universal-selector"><li>Universal Selector</li></a>
+				<a href="index.html#css-ie-hack">Internet Explorer Hacks<li></li></a>
+				<a href="index.html#css-technique"><li>Techniques</li></a>
+				<a href="index.html#css-nth-child"><li>Nth Child</li></a>
 			</ul>
 			<div class="section-content">
 				<h2 id="css-processing">Processing</h2>
 				<p>In CSS, the page is processed from top to bottom. That means that CSS on the bottom of the page overrides CSS at the bottom of the page. </p>
-				<h2 id="css-selectors">Selectors</h2>
+				<h2 id="css-selector">Selectors</h2>
 				<p>When CSS elements are laid out in a CSS stylesheet with only spaces between them, the CSS rule applies to nested elements in that specific order.</p>
 				<p>If CSS classes or IDs are directly next to eachother, that means both are required for the rule to be enacted. I am not sure if normal html elements work the same, but I assume not. </p>
 				<h2 id="css-margin-padding">Margin/Padding</h2>
@@ -193,7 +208,7 @@
 				<p>The following class may be applied to make the size of the parent element the same as the children<p class="code"><code>clearfix::after{<br>clear:both;<br>content: "";<br>display:table;}</code></p >There are some apparent stipulations that I have not looked into that will cause scrollbars to appear if improper margin and padding settings are employed.</p>
 				<h2 id="css-box-shadow">Box-shadow</h2>
 				<p>Box-shadow properties operate as the following: <p class="code"><code>x-offset:</code></p> and <p class="code"><code>y-offset:</code></p> will adjust shadow in x and y directions. Other options include blur, color, and spread. Color changes color, blur increases blur, and spread increases size.</p> 
-				<h2 id="css-media-queries">Media Queries</h2>
+				<h2 id="css-media-query">Media Queries</h2>
 				<p>While media queries commonly check for screen size or resolution, they can also check for other things such as orientation (landscape or portrait), or if the document is being printed.</p>
 				<h2 id="css-initial-value">Initial value</h2>
 				<p>If the initial value is used for a rule, it will set the value to the previous, initial value. If there is no initial value that was set by the user, the initial value of the document will be set. This may be useful for font sizes but I'm not sure.</p>
@@ -230,6 +245,36 @@
 				<h2 id="css-background-property">Background Property</h2>
 				<p>Background property.</p>
 
+				<h2 id="css-box">Box</h2>
+				<p>When referencing size in a box the order goes Top, right, bottom, and then left.</p>
+
+				<h2 id="css-border">Borders</h2>
+				<p><code>border-radius</code> will give rounded corners</p>
+
+				<h2 id="css-pseudoclass">Pseudoclasses</h2>
+				<p>Pseudoclasses select elements in page under certain conditions such as <code>:link, :visited, :hover, :active</code></p>
+				<p><strong>First-letter</strong> is a pseudo class alongside other pseudoclasses</p>
+
+				<h2 id="css-list">Lists</h2>
+				<p>List elements are at the block level.</p>
+
+				<h2 id="css-width">Width</h2>
+				<p>Width requires a block level element.</p>
+
+				<h2 id="css-universal-selector">Universal Selector</h2>
+				<p>The universal selector is <code>*</code></p>
+
+				<h2 id="css-ie-hack">Internet Explorer Hacks</h2>
+				<p><code>Main, nav {display:block;}</code> will fix internet explorer not support main or nav tag.</p>
+
+				<h2 id="css-technique">Techniques</h2>
+				<p><code>position:fixed;</code> will allow a navbar to be placed without scrolling away.</p>
+
+				<h2 id="css-nth-child">Nth Child</h2>
+				<p>nth-child(#) will select nth child, or can be set to only select evens or odds.</p>
+
+				
+				
 
 
 
@@ -244,6 +289,9 @@
 				<a href="index.html#javascript-closure"><li>Closure</li></a>
 				<a href="index.html#javascript-scope"><li>Scope</li></a>
 				<a href="index.html#javascript-context"><li>Context</li></a>
+				<a href="index.html#javascript-variables"><li>Variables</li></a>
+				<a href="index.html#javascript-functions"><li>Functions</li></a>
+				<a href="index.html#javascript-event-handler"><li>Event Handlers</li></a>
 			</div>
 			<h2 id="javascript-first-class-functions">First Class Functions</h2>
 			<p>Functions are treated as any variable would be and can be passed as arguments</p>
@@ -292,7 +340,21 @@
 			<h2 id="javascript-api">API</h2>
 			<p>This could probably be its own section</p>
 			<p>An Api can be a var object with two functions in it.</p>
+
+			<h2 id="javascript-variable">Variables</h2>
+			<p>Variables may be input as arguments in function parenthesis.</p>
+
+			<h2 id="javascript-functions">Functions</h2>
+			<p>When a function is called, argument is then specified.</p>
+			<p><p class="code"><code>new Date()</code></p></p>
+			<p>Anonymous functions have no name and can be called with a <code>()</code> directly after the function is declared.</p>
 			
+			<h2 id="javascript-event-handler">Event Handler</h2>
+			<p>onLoad is an event handler. It is an attribute</p>
+			<p><code>onclick, onmouseover, onresize, onmouseout, onchange, onload, and onkeypress</code>are also event handlers.</p>
+
+			<h2 id="javascript-question">Questions</h2>
+			<p class="question">Can we build objects int he console?</p>
 		</div>
 		<div class="section">
 			<h1 class="section-header" id="php">PHP</h1>
@@ -408,6 +470,34 @@
 			
 			<h2 id="general-graduated">Graduated</h2>
 			<p>A graduaated image has gradual transparency.</p>
+		</div>
+
+		<div class="section">
+			<h1 id="moon-doggy" class="section-header">Wagging the moon doggy.</h1>	
+			<ul class="table-of-contents">
+				<a href="index.html#moon-doggy-section-one"><li>Section One</li></a>
+				<a href="index.html#moon-doggy-section-two"><li>Section Two</li></a>
+				<a href="index.html#moon-doggy-section-three"><li>Section Three</li></a>
+			</ul>
+			
+			<h2 id="moon-doggy-section-one">Section One</h2>
+			<p>The farthest we went/go during manned operations excluding the moon expeditions is 400 miles. Most satellites are at about 200 mile radius.</p>
+			<p>All of the original tapes of the landing were destroyed when in NASA's possession. The original broadcasts were recordings of the original footage which was broadcast over the airways.</p>
+			<p>Soviets beat the States in all ways.</p>
+
+			<h2 id="moon-doggy-section-two">Section Two</h2>
+			<p>Moon rocks are bountiful in Antarctica due to conditions good for preservation. NASA has bases in Antarctica (Nazis on Ice?).</p>
+			<p>Some moon rocks are petrified wood. These were sold as moon rocks.</p>
+			<p>Claims of satellite imagery of lunar equipment have never been proven.</p>
+
+			<h2 id="moon-doggy-section-three">Section Three</h2>
+			<p>Lazer targets were on the moon and were used to bounce lazers off of them.</p>
+			<p>The Rovers were extrordinarily big to fit on the small ass ship</p>
+			<p>Absence of batteries for power when engine was off.</p>
+			<p>Vietnam and moon landing events corresponded.</p>
+			<p>1/3 doubted moon landing as it was happening and 1/4 of young adults doubted at the time of publishing.</p>
+			<p>Radation would require 4 foot lead barrier to protect the cosmonauts. Only something as thing as aluminum foil was used.</p>
+			<p>NASA released article about radiation problems for future launches.</p>
 		</div>
 	</main>
 </body>
