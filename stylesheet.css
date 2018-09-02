@@ -68,3 +68,7 @@ table {
 .header {
 	text-align: center;
 }
+.question {
+	font-size: 1.1em;
+	font-style: italic;
+}
