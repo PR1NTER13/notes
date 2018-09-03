@@ -27,11 +27,11 @@
 		</ul>
 		<h1>Other TOC</h1>
 		<ul class="table-of-contents clearfix">
-			<a href="index.html#phrases"><li>Phrases</li></a>
-			<a href="index.html#questions"><li>Questions</li></a>
-			<a href="index.html#definitions"><li>Definitions</li></a>
-			<a href=""><li></li></a>
-			<a href=""><li></li></a>
+			<a href="index.html#phrase"><li>Phrases</li></a>
+			<a href="index.html#question"><li>Questions</li></a>
+			<a href="index.html#definition"><li>Definitions</li></a>
+			<a href="index.html#moon-doggy"><li>Wagging the Moondoggy</li></a>
+			<a href="index.html#insight"><li>Insights</li></a>
 		</ul>
 
 		<div class="section">
@@ -40,6 +40,7 @@
 				<a href="index.html#general-images"><li>Images</li></a>
 				<a href="index.html#general-http"><li>HTTP</li></a>
 				<a href="index.html#general-design"><li>Design</li></a>
+				<a href="index.html#general-definitions"><li>Definitions</li></a>
 				
 			</ul>
 			<div class="section-content">
@@ -66,6 +67,11 @@
 
 					<p><strong>Bang Operator</strong>is what we call <code>!= </code></p>
 					<p><strong>Camel Case</strong>thisIsCamelCase.</p>
+
+					<p><strong>Methods</strong> are functions inside objects</p>
+
+					<h2 id="general-assignment-operator">Assignment Operator</h2>
+					<p>The assignment operator is <code>=</code> also known as the equals sign.</p>
 					
 			</div>
 		</div>
@@ -86,6 +92,7 @@
 				<a href="index.html#html-radio"><li>Radio</li></a>
 				<a href="index.html#html-table"><li>Table</li></a>
 				<a href="index.html#html-meta"><li>Meta tag</li></a>
+				<a href="index.html#html-svg"><li>SVG</li></a>
 			</ul> <!--table-of-contents-->
 			<div class="section-content">
 				<h2 id="html-doctype">< !DOCTYPE html></h2>
@@ -159,6 +166,9 @@
 
 				<h2 id="html-head">Head</h2>
 				<p><code>head</code> is not necessary in HTML-5</p>
+
+				<h2 id="html-svg">SVG</h2>
+				<p>HTML 5 supports drawing svg lines with <code>canvas</code> element.</p>
 
 
 				
@@ -292,6 +302,8 @@
 				<a href="index.html#javascript-variables"><li>Variables</li></a>
 				<a href="index.html#javascript-functions"><li>Functions</li></a>
 				<a href="index.html#javascript-event-handler"><li>Event Handlers</li></a>
+				<a href="index.html#javascript-reserved-words"><li>Reserved Words</li></a>
+			
 			</ul>
 
 			<h2 id="javascript-first-class-functions">First Class Functions</h2>
@@ -346,18 +358,59 @@
 
 			<h2 id="javascript-variable">Variables</h2>
 			<p>Variables may be input as arguments in function parenthesis.</p>
+			<p>Variables are case sensitive in Javascript!!!</p>
 
 			<h2 id="javascript-functions">Functions</h2>
 			<p>When a function is called, argument is then specified.</p>
 			<p><p class="code"><code>new Date()</code></p></p>
 			<p>Anonymous functions have no name and can be called with a <code>()</code> directly after the function is declared.</p>
+			<p>indexOf() will tell numberical position of argument</p>
+			<p>isNaN() will return true if argument is not a number.</p>
+			<p>parseInt() queries string for int. Will not work if int does not begin string.</p>
 			
 			<h2 id="javascript-event-handler">Event Handler</h2>
 			<p>onLoad is an event handler. It is an attribute</p>
 			<p><code>onclick, onmouseover, onresize, onmouseout, onchange, onload, and onkeypress</code>are also event handlers.</p>
 
+			<h2 id="javascript-reserved-words">Reserved Words</h2>
+			<p>Javascript has a list of reserved words that cannot be used as function or variable names.</p>
+
+			<h2 id="javascript-object">Objects</h2>
+			<p>Three object groups: Browser, Document, Global.</p>
+			<canvas>
+			<p><span id="object-father-1">Window</span> 
+				<p>
+					<span class="object-child-1">Navigator</span>
+					<span class="object-child-1">Screen</span>
+					<span class="object-child-1">History</span>
+					<span class="object-child-1">Location</span>
+					<span id = "object-father-2" class="object-child-1">Document</span>
+				</p>
+				<p>
+					<span class="object-child-2">Title</span>
+					<span class="object-child-2">div</span>
+					<span class="object-child-2">p</span>
+					<span class="object-child-2">form</span>
+					<span class="object-child-2">img</span>
+					<span class="object-child-2">a</span>
+					<span class="object-child-2">video</span>
+				</p>
+			<span id="object-father-3">Core Language/Global Objects</span>
+				<p>
+					<span class="object-child-3">Array</span>
+					<span class="object-child-3">Boolean</span>
+					<span class="object-child-3">Date</span>
+					<span class="object-child-3">Math</span>
+					<span class="object-child-3">Number</span>
+					<span class="object-child-3">String</span>
+				</p>
+			</canvas>
+
+
+
 			<h2 id="javascript-question">Questions</h2>
 			<p class="question">Can we build objects int he console?</p>
+
 
 		</div> <!-- .section -->
 		<div class="section">
@@ -371,6 +424,7 @@
 			<div class="table-of-contents">
 				<a href="index.html#sql-injections"><li>Injections</li></a>
 				<a href="index.html#sql-prepared-statements"><li>Prepared Statements</li></a>
+				<a href="index.html#sql-injection"><li>SQL injection</li></a>
 			</div>
 			<div class="section-content">
 				<h2 id="sql-injections">Injections</h2>
@@ -378,6 +432,18 @@
 
 				<h2 id="sql-prepared-statements">Prepared Statements</h2>
 				<p>Use this hack to prevent commands from data in the webpage. Look up security guidelines!</p>
+
+				<h2 id="sql-injection">Injections</h2>
+				<p>Three different types of SQL injection:
+					<ol>
+						<li>Error</li>
+						<li>Blind</li>
+						<li>Union</li>
+					</ol>
+				</p>
+				<p><span class="definition">Error-</span> is when a question/query causes error and information from that error can be gleened.</p>
+				<p><span class="definition">Union-</span>Combining two or moreSelects into single result. Useful.</p>
+				<p><span class="definition">Blind</span>Asks database true or false question and uses if page returned as asked to determine if query was valid.</p>
 
 
 			</div>
@@ -451,7 +517,7 @@
 		<hr >
 		<h1 class="header">Section two is beginning :)</h1>
 		<div class="section">
-			<h1 class="section-header" id="phrases">Phrases</h1> 
+			<h1 class="section-header" id="phrase">Phrases</h1> 
 			<ul class="table-of-contents">
 				<a href="index.html#phrases-sting"><li>Here's the sting</li></a> 
 				<a href="index.html#phrases-technical-debt"><li>Technical Debt</li></a>	
@@ -465,25 +531,36 @@
 
 		</div> <!-- .section -->
 		<div class="section">
-			<h1 class="section-header" id="questions">Questions</h1>
+			<h1 class="section-header" id="question">Questions</h1>
 			<ul class="table-of-contents">
-				<a href="index.html-questions-human-phobias"><li>Human Phobias</li></a>
+				<a href="index.html-questions-human-phobia"><li>Human Phobias</li></a>
 			</ul>
 
-			<h2 id="questions-human-phobias">Human Phobias</h2>
+			<h2 id="question-human-phobia">Human Phobias</h2>
 			<p class="question">Are human phobias of membranes or things like honey comb where there are a lot of wholes based on real sense data?</p>
 			<p class="answer">Viruses travel in membranes/packs where they group together in biofilm (I believe it is biofilm, but it could be another material), which is what inspired this question. I do not doubt there is unconscious intuition involved.</p>
 		</div> <!-- .section -->
 
 		<div class="section">
-			<h1 id="definitions" class="section-header">Definitions</h1>
+			<h1 id="definition" class="section-header">Definitions</h1>
 			<ul class="table-of-contents">
-				<a href="index.html#definitions-graduated"><li>Graduated</li></a>
+				<a href="index.html#definition-graduated"><li>Graduated</li></a>
 			</ul>
 			
 			<h2 id="general-graduated">Graduated</h2>
 			<p>A graduated image has gradual transparency.</p>
 		</div> <!-- .section -->
+
+		<div class="section">
+			<h1 id="insight" class="section-header">Insight</h1>	
+			<ul class="table-of-contents">
+				<a href="index.html#insight-small-talk"><li>Small talk</li></a>
+			</ul>
+			<div class="section-content">
+				<h2 id="insight-small-talk">Small Talk</h2>
+				<p>People naturally allocate small pauses to allow others to jump into small talk, or conversation. Perhaps this is the reason some people seem so obtuse when talking, there is a emotional response to the negligence of the speaker.</p>
+			</div>
+		</div>
 
 		<div class="section">
 			<h1 id="moon-doggy" class="section-header">Wagging the moon doggy.</h1>	
@@ -513,5 +590,6 @@
 			<p>NASA released article about radiation problems for future launches.</p>
 		</div> <!-- .section -->
 	</main> <!-- main -->
+	<script src="js.js"></script>
 </body>
 </html>
