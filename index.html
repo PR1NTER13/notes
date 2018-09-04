@@ -32,6 +32,7 @@
 			<a href="index.html#definition"><li>Definitions</li></a>
 			<a href="index.html#moon-doggy"><li>Wagging the Moondoggy</li></a>
 			<a href="index.html#insight"><li>Insights</li></a>
+			<a href="index.html#persona"><li>General Persona and Personal Realizations</li></a>
 		</ul>
 
 		<div class="section">
@@ -84,7 +85,7 @@
 				<a href="index.html#html-years"><li>Years</li></a>
 				<a href="index.html#html-general"><li>General</li></a>
 				<a href="index.html#html-description-list"><li>Description List</li></a>
-				<a href="index.html#html-forms"><li>Forms</li></a>
+				<a href="index.html#html-form"><li>Forms</li></a>
 				<a href="index.html#html-anchor"><li>Anchors</li></a>
 				<a href="index.html#html-dropdown"><li>Dropdown</li></a>
 				<a href="index.html#html-textarea"><li>Text Area</li></a>
@@ -93,6 +94,7 @@
 				<a href="index.html#html-table"><li>Table</li></a>
 				<a href="index.html#html-meta"><li>Meta tag</li></a>
 				<a href="index.html#html-svg"><li>SVG</li></a>
+				<a href="index.html#html-get"><li>GET</li></a>
 			</ul> <!--table-of-contents-->
 			<div class="section-content">
 				<h2 id="html-doctype">< !DOCTYPE html></h2>
@@ -129,12 +131,13 @@
 				<p><code>dt</code> means description type</p>
 				<p><code>dd</code> means data description</p>
 
-				<h2 id="html-forms">Forms</h2>
+				<h2 id="html-form">Forms</h2>
 				<p><code>name=form-name</code> is the name of the form.</p>
 				<p><code>type=text, password, submit</code> are different types of forms.</p>
 				<p><code>action=index.php</code> will send the information to named page.</p>
 				<p>The <strong>query string</strong> is what comes after the url and lets the browser know what to do when using get method.</p>
 				<p>Get can only send 3000 characters max.</p>
+				<p>name attribute must be unique.</p>
 
 				<h2 id="html-anchor">Anchors</h2>
 				<p></p>
@@ -169,6 +172,10 @@
 
 				<h2 id="html-svg">SVG</h2>
 				<p>HTML 5 supports drawing svg lines with <code>canvas</code> element.</p>
+
+				<h2 id="html-get">GET</h2>
+				<p>GET data is 300 characters long maximum.</p>
+				<p>name/value pairs make up get data.</p>
 
 
 				
@@ -299,10 +306,16 @@
 				<a href="index.html#javascript-closure"><li>Closure</li></a>
 				<a href="index.html#javascript-scope"><li>Scope</li></a>
 				<a href="index.html#javascript-context"><li>Context</li></a>
-				<a href="index.html#javascript-variables"><li>Variables</li></a>
-				<a href="index.html#javascript-functions"><li>Functions</li></a>
+				<a href="index.html#javascript-variable"><li>Variables</li></a>
+				<a href="index.html#javascript-function"><li>Functions</li></a>
 				<a href="index.html#javascript-event-handler"><li>Event Handlers</li></a>
-				<a href="index.html#javascript-reserved-words"><li>Reserved Words</li></a>
+				<a href="index.html#javascript-reserved-word"><li>Reserved Words</li></a>
+				<a href="index.html#javascript-innerhtml"><li>InnerHTML</li></a>
+				<a href="index.html#javascript-loop"><li>Loops</li></a>
+				<a href="index.html#javascript-term"><li>Terms</li></a>
+				<a href="index.html#javascript-property"><li>Property</li></a>
+				<a href="index.html#javascript-this"><li>This</li></a>
+				<a href="index.html#javascript-parameter"><li>Parameters</li></a>
 			
 			</ul>
 
@@ -360,23 +373,35 @@
 			<p>Variables may be input as arguments in function parenthesis.</p>
 			<p>Variables are case sensitive in Javascript!!!</p>
 
-			<h2 id="javascript-functions">Functions</h2>
+			<h2 id="javascript-function">Functions</h2>
 			<p>When a function is called, argument is then specified.</p>
 			<p><p class="code"><code>new Date()</code></p></p>
 			<p>Anonymous functions have no name and can be called with a <code>()</code> directly after the function is declared.</p>
 			<p>indexOf() will tell numberical position of argument</p>
 			<p>isNaN() will return true if argument is not a number.</p>
 			<p>parseInt() queries string for int. Will not work if int does not begin string.</p>
+			<p>indexOf() will only grab the index of a single instance, and only the first of that instance.</p>
+			<p>write() is bad use of writing</p>
+			<p>.innerhtml value is good way to change html</p>
+			<p>DOM manipulation is complicated but more powerful way of changing html. (can add tags etc)</p>
+			<p>push() will append to the end of an array.</p>
+			<p>An example of DOM manipulation is <code>document.createTextNode()</code></p>
+			<p><code>.getContext(), linewidth, and strokeStyle</code> are all parts of ways to draw within a canvas. </p>
+			<p>moveTo() will set starting position when using canvas.</p>
+			<p><code>split()</code> takes a string and splits each individual character into an array.</p>
+			<p><code>Math.random</code> will give a random number between 0 and <code>math.floor</code>will round it.</p>
+
 			
 			<h2 id="javascript-event-handler">Event Handler</h2>
 			<p>onLoad is an event handler. It is an attribute</p>
 			<p><code>onclick, onmouseover, onresize, onmouseout, onchange, onload, and onkeypress</code>are also event handlers.</p>
 
-			<h2 id="javascript-reserved-words">Reserved Words</h2>
+			<h2 id="javascript-reserved-word">Reserved Words</h2>
 			<p>Javascript has a list of reserved words that cannot be used as function or variable names.</p>
 
 			<h2 id="javascript-object">Objects</h2>
 			<p>Three object groups: Browser, Document, Global.</p>
+			<p>Objects can contain functions and properties.</p>
 			<!-- below is temporarily out of service. Trying to make line charts. -->
 			<p><span id="object-father-1">Window</span> 
 				<p>
@@ -404,16 +429,64 @@
 					<span class="object-child-3">Number</span>
 					<span class="object-child-3">String</span>
 				</p>
+			</p>
+
+			<h2 id="javascript-innerhtml">InnerHTML</h2>
+			<p>InnerHTML is a property that allows access to the objects html.</p>
+
+			<h2 id="javascript-loop">Loops</h2>
+			<p>Javascript has four types of loops: while, do/while, for/in, and for.</p>
+
+			<h2 id="javascript-property">Properties</h2>
+			<p>Javascript properties are characteristics of an object</p>
+			<p><code>.value</code> property changes value of option accessed in the same object before before.</p>
+			<p><code>.contentEditable</code> is a true or false property that allows the content specified to be editable or not.</p>
 		
 			<h2 id="javascript-question">Questions</h2>
-			<p class="question">Can we build objects int he console?</p>
+			<p class="question">Can we build objects in the console?</p>
 
+			<h2 id="javascript-term">Terms</h2>
+			<p><strong>Comparison operator</strong> is <code>==</code> for different type comparison, and <code>===</code> for same type comparison.</p>
+			<p><strong>return</strong> will return information and end the function.</p>
+			<p>No more data is sent after return is called in a function.</p>
+			<p><strong>DOM</strong> stands for document object model.</p>
+
+			<h2 id="javascript-this">This</h2>
+			<p>This.id will pass id to a different function that wants to use ID.</p>
+
+			<h2 id="javascript-parameter">Parameters</h2>
+			<p>Parameters are the creator of arguments.</p>
 
 		</div> <!-- .section -->
 		<div class="section">
 			<h1 class="section-header" id="php">PHP</h1>
 			<div class="table-of-contents">
-				<a href="#"></a>
+				<a href="index.html#php-variable"><li>Variables</li></a>
+				<a href="index.html#php-concatenate"><li>Concatenate</li></a>
+				<a href="index.html#php-definition"><li>Definitions</li></a>
+				<a href="index.html#php-function"><li>Functions</li></a>
+				<a href="index.html#php-comment"><li>Comments</li></a>'
+				<a href="index.html#php-general"><li>General</li></a>
+			</div>
+			<div class="section-content">
+				<h2 id="php-variable">Variables</h2>
+				<p>PHP variables start with a $, and are proceeded by only a-z and _. Numbers may be in the variable name but not after the dollar sign.</p>
+
+				<h2 id="php-concatenate">Concatenate</h2>
+				<p>In PHP, period is the concatenate sign.</p>
+
+				<h2 id="php-definition">Definitions</h2>
+				<p><strong>htdocs</strong> in the PHP server folders stand for hyper text documentsa</p>
+
+				<h2 id="php-function">Functions</h2>
+				<p>phpinfo() displays a large table of data that tells the user about the type of PHP the web server is running.</p>
+
+				<h2 id="php-comment">Comments</h2>
+				<p>PHP comments may be started with <code>//, #, or /* */</code></p>
+
+				<h2 id="php-general">General</h2>
+				<p>All keywords in PHP are not case specific, but variable names are case specific (sensitive).</p>
+
 			</div>
 		</div> <!-- .section -->
 		<div class="section">
@@ -557,6 +630,16 @@
 				<h2 id="insight-small-talk">Small Talk</h2>
 				<p>People naturally allocate small pauses to allow others to jump into small talk, or conversation. Perhaps this is the reason some people seem so obtuse when talking, there is a emotional response to the negligence of the speaker.</p>
 			</div>
+		</div>
+
+		<div class="section">
+			<h1 id="persona">General Persona and Social Realizations</h1>
+			<ul class="table-of-contents">
+				<a href="index.html#persona-personality"><li>Personality</li></a>
+			</ul>
+
+			<h2 id="persona-personality">Personality</h2>
+			<p>Document general personality, lay it all out, to fall back on. This does not mean you should not change or will not stray from this box, but that this box gives you freedom because you will always have something to fall back on. This concept already exists but is untouched due to fear of change. So yourself is being stipend.</p>
 		</div>
 
 		<div class="section">
